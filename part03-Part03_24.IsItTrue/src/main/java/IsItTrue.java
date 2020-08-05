@@ -5,6 +5,11 @@ public class IsItTrue {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        String s = scanner.nextLine();
+        if(s.equals("true")){
+            System.out.println("you got it right!");
+        }else{
+            System.out.println("Try again!");
+        }
     }
 }
