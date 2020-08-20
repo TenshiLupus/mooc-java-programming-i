@@ -18,5 +18,19 @@ public class SimpleCollection {
     public ArrayList<String> getElements() {
         return this.elements;
     }
+    
+    public String longest(){
+        if(elements.isEmpty()){
+            return null;
+        }
+        
+        String currentMax = elements.get(0);
+        for(String e : elements){
+            if(currentMax.length() < e.length()){
+                currentMax = e;
+            }
+        }
+        return currentMax;
+    }
 
 }
